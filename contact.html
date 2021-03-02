@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ff4d152faa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <title>Monatana Resort</title>
+  </head>
+  <body>
+    <header id="header-area" class="header-area">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <ul class="my-nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <div class="my-nav-logo justify-content-center">
+              <img src="./images/logo.png" class="image-fluid" />
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div
+              class="my-nav-buttons d-flex justify-content-end align-items-center"
+            >
+              <div class="my-nav-icons">
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+              <button class="my-nav-button" id="bookBtn">Book A Room</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--mobile nav-->
+    <div class="mobile-nav" id="mobile-nav">
+      <div class="mobile-logo">
+        <img src="./images/logo.png" alt="" height="60" width="60" />
+      </div>
+      <span id="mobile-menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </span>
+      <ul id="mobile-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" id="book-now-btn">Book A Room</a></li>
+      </ul>
+    </div>
+    <!--Banner-->
+    <section id="banner-section" style="background-image: url(./images/about-banner.png);">
+      <h1>Get in Touch</h1>
+    </section>
+
+    <section id="det-section" class="py-5">
+        <div class="container">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d27074.653385073587!2d35.86933950828552!3d31.979023179085075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d31.961273199999997!2d35.926644599999996!4m5!1s0x151ca1b04db4f433%3A0x2876c6f891849e8d!2z2KfYqNix2KfYrCDYp9mE2K3YrNin2LLigK0!3m2!1d31.976020899999998!2d35.860968199999995!5e0!3m2!1sen!2sjo!4v1614631089421!5m2!1sen!2sjo" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <h3 class="mb-4">Get in Touch</h3>
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <div class="contact-form">
+                        <form action="#" method="#">
+                            <div class="form-group">
+                                <textarea name="" class="form-control" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="form-group cont-creds">
+                                <input type="text" placeholder="Enter your name" class="form-control">
+                                <input type="email" placeholder="Enter your e-mail" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-lg btn-outline-primary">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 offset-md-1">
+                    <div class="contact-dets">
+                        <div class="field d-flex align-items-center">
+                            <div class="wre mr-4">
+                                <a href="#" style="color: #8f9195;"><i class="fas fa-home" style="transform: scale(2);"></i></a>
+                            </div>
+                            <div class="cont-text">
+                                <p class="lead" style="color: #2a2a2a;">Buttonwood, California.</p>
+                                <p style="color: #8a8a8a;">Rosemead, CA 91770</p>
+                            </div>
+                        </div>
+                        <div class="field d-flex align-items-center my-5">
+                            <div class="wre mr-4">
+                                <a href="#" style="color: #8f9195;"><i class="fas fa-mobile" style="transform: scale(2);"></i></a>
+                            </div>
+                            <div class="cont-text">
+                                <p class="lead" style="color: #2a2a2a;">+1 253 565 2365</p>
+                                <p style="color: #8a8a8a;">Mon to Fri 9am to 6pm
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="field d-flex align-items-center">
+                            <div class="wre mr-4">
+                                <a href="#" style="color: #8f9195;"><i class="fas fa-envelope" style="transform: scale(2);"></i></a>
+                            </div>
+                            <div class="cont-text">
+                                <p class="lead" style="color: #2a2a2a;">support@colorlib.com</p>
+                                <p style="color: #8a8a8a;">Send us your query anytime!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--Footer section-->
+     <section id="footer-section">
+        <div class="footer-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-3 my-4 my-md-0">
+                <div class="address">
+                  <h3>Address</h3>
+                  <p class="">200, Green road, Mongla, New York City USA</p>
+                  <a href="#">Get Direction</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 my-4 my-md-0">
+                <div class="reservation">
+                  <h3>Reservation</h3>
+                  <p class="">
+                    +10 367 267 2678 <br />
+                    reservation@montana.com
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-2 my-4 my-md-0">
+                <div class="navigation">
+                  <h3>Navigation</h3>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 my-4 my-md-0">
+                <div class="newsletter">
+                  <h3>Newsletter</h3>
+                  <form action="#" method="#">
+                    <input type="text" placeholder="Enter your e-mail" /><input
+                      type="submit"
+                      value="Sign Up"
+                    />
+                  </form>
+                  <p>Subscrib to newsletter to get updates</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="straight-line"></div>
+          <div class="credits d-flex justify-content-between align-items-center">
+            <div class="name">Coded By <a href="#">Belal Wesam</a></div>
+            <div class="socials">
+              <a href="#"><i class="fa fa-facebook-square"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="book-now">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 col-md-8 offset-md-2">
+                   <form action="#" method="post">
+                       <h1 class="mb-3 text-center">Check Availibilty</h1>
+                       <span id="close-book">X</span>
+                       <div class="reservation-creds">
+                           <div class="dates">
+                               <input type="text" id="datepicker" placeholder="Enter arrival date" class="form-control"> 
+                               <input type="text" id="datepicker-2" placeholder="Enter leave date" class="form-control">
+                           </div>
+                           <div class="personals">
+                             <select name="" id="adults" class="custom-select">
+                                 <option value="">Adults</option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                             </select>
+                             <select name="" id="kids" class="custom-select">
+                                 <option value="">Kids</option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                             </select>
+                           </div>
+                       </div>
+                       <div class="form-group">
+                           <button type="submit" class="btn btn-lg btn-primary btn-block">Check</button>
+                       </div>
+                   </form>
+                  </div>
+              </div>
+          </div>
+       </div>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $("#datepicker").datepicker();
+    $("#datepicker-2").datepicker();
+  </script>
+</body>
+</html>

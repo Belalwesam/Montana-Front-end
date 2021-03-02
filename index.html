@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/ff4d152faa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <title>Monatana Resort</title>
+  </head>
+  <body>
+    <header id="header-area" class="header-area">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <ul class="my-nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <div class="my-nav-logo justify-content-center">
+              <img src="./images/logo.png" class="image-fluid" />
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div
+              class="my-nav-buttons d-flex justify-content-end align-items-center"
+            >
+              <div class="my-nav-icons">
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+              <button class="my-nav-button" id="bookBtn">Book A Room</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--mobile nav-->
+    <div class="mobile-nav" id="mobile-nav">
+      <div class="mobile-logo">
+        <img src="./images/logo.png" alt="" height="60" width="60" />
+      </div>
+      <span id="mobile-menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </span>
+      <ul id="mobile-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="rooms.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" id="book-now-btn">Book A Room</a></li>
+      </ul>
+    </div>
+    <section id="slider-section">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="
+                width: 100vw;
+                height: 100vh;
+                background: url('./images/banner-1.png') center center;
+                background-repeat: no-repeat;
+              "
+            >
+              <div class="hero-text">
+                <h1>Monata Resort</h1>
+                <p class="lead">Unlock to Enjoy the view of Martin</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="
+                width: 100vw;
+                height: 100vh;
+                background: url('./images/banner-2.png') center center;
+                background-repeat: no-repeat;
+              "
+            >
+              <div class="hero-text">
+                <h1>Life is Beautiful</h1>
+                <p class="lead">Unlock to Enjoy the view of Martin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!--About section-->
+    <section id="section-about" class="text-center text-md-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5 my-5 my-md-0">
+            <div class="about-text">
+              <span class="mb-4">About Us</span>
+              <h1 class="mb-3">A Luxuries Hotel with Nature</h1>
+              <p class="mb-5">
+                Suscipit libero pretium nullam potenti. Interdum, blandit
+                phasellus consectetuer dolor ornare dapibus enim ut tincidunt
+                rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
+                sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et.
+                Rhoncus.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-7 d-flex justify-content-end">
+            <div class="about-images">
+              <div class="about-images-align">
+                <img src="./images/about-1.png" alt="" class="img-fluid" />
+                <img
+                  src="./images/about-2.png"
+                  alt=""
+                  class="img-fluid ml-0 ml-md-2"
+                  style="margin-bottom: -5rem"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Offers section-->
+    <section id="offers-section">
+      <div class="container">
+        <div class="offers-text text-center">
+          <span class="my-5 d-block">Our Offers</span>
+          <h1>Ongoing Offers</h1>
+        </div>
+        <div class="row my-5">
+          <div class="col-12 col-md-4 p-3" id="image-hover">
+            <div class="single-offer">
+              <div class="offer-img mb-5 text-center text-md-left">
+                <div class="inner-img">
+                  <img src="./images/offers-1.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+              <div class="offer-detailes">
+                <h4 class="mb-3" style="line-height: 1.9rem">
+                  Up to 35% savings on Club rooms and Suites
+                </h4>
+                <ul class="pl-3 mb-4">
+                  <li>Luxaries condition</li>
+                  <li>3 Adults & 2 Children size</li>
+                  <li>Sea view side</li>
+                </ul>
+                <button class="btn btn-lg btn-block btn-outline-primary">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-3" id="image-hover">
+            <div class="single-offer">
+              <div class="offer-img mb-5 text-center text-md-left">
+                <div class="inner-img">
+                  <img src="./images/offers-2.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+              <div class="offer-detailes">
+                <h4 class="mb-3" style="line-height: 1.9rem">
+                  Up to 35% savings on Club rooms and Suites
+                </h4>
+                <ul class="pl-3 mb-4">
+                  <li>Luxaries condition</li>
+                  <li>3 Adults & 2 Children size</li>
+                  <li>Sea view side</li>
+                </ul>
+                <button class="btn btn-lg btn-block btn-outline-primary">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-3" id="image-hover">
+            <div class="single-offer">
+              <div class="offer-img mb-5 text-center text-md-left">
+                <div class="inner-img">
+                  <img src="./images/offers-3.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+              <div class="offer-detailes">
+                <h4 class="mb-3" style="line-height: 1.9rem">
+                  Up to 35% savings on Club rooms and Suites
+                </h4>
+                <ul class="pl-3 mb-4">
+                  <li>Luxaries condition</li>
+                  <li>3 Adults & 2 Children size</li>
+                  <li>Sea view side</li>
+                </ul>
+                <button class="btn btn-lg btn-block btn-outline-primary">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section Video-->
+    <section id="video-section">
+      <div class="video-area">
+        <span>Montana Sea View </span>
+        <h1 class="vid-h1">
+            Relax and Enjoy your <br />
+            Vacation
+        </h1>
+        <div id="toggle-vid-btn">
+            <i class="fas fa-play"></i>
+        </div>
+      </div>
+    </section>
+    <!--Video pop up-->
+    <div class="video-pop-up" id="video-window">
+        <div class="video-screen">
+            <span id="closeVideo">X</span>
+            <iframe class="w-100 h-100" src="//www.youtube.com/embed/vLnPwxZdW4Y?autoplay=1" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+        <!--Food section-->
+        <section id="section-about" class="text-center text-md-left">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-7 d-flex justify-content-start mb-5 mb-md-0">
+                  <div class="about-images">
+                    <div class="about-images-align">
+                      <img src="./images/food-1.png" alt="" class="img-fluid" />
+                      <img
+                        src="./images/food-2.png"
+                        alt=""
+                        class="img-fluid ml-0 ml-md-2"
+                        style="margin-bottom: -5rem"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-5 my-5 my-md-0">
+                    <div class="about-text">
+                      <span class="mb-4">Delicious Food
+                    </span>
+                      <h1 class="mb-3">We Serve Fresh and
+                        Delicious Food</h1>
+                      <p class="mb-5">
+                        Suscipit libero pretium nullam potenti. Interdum, blandit
+                        phasellus consectetuer dolor ornare dapibus enim ut tincidunt
+                        rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
+                        sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et.
+                        Rhoncus.
+                      </p>
+                      <a href="#">Learn More</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <!--Rooms section -->
+          <section id="rooms-section">
+              <div class="rooms-text text-center">
+                  <span class="mb-4">
+                      Featured Rooms
+                  </span>
+                  <h1 class="mb-5">Choose a Better Room</h1>
+              </div>
+              <div class="rooms">
+                <div class="single-room">
+                    <div class="inner-room-image">
+                        <img src="./images/rooms-1.png" class="img-fluid">
+                    </div>
+                    <div class="single-room-text text-white d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="mb-2">From $250/night</span>
+                            <h3>Superior  Room</h3>
+                        </div>
+                        <a href="#">Book Now</a>
+                    </div>
+                </div>
+                <div class="single-room">
+                    <div class="inner-room-image">
+                        <img src="./images/rooms-2.png" class="img-fluid">
+                    </div>
+                    <div class="single-room-text text-white d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="mb-2">From $250/night</span>
+                            <h3>Deluxe   Room</h3>
+                        </div>
+                        <a href="#">Book Now</a>
+                    </div>
+                </div>
+                <div class="single-room">
+                    <div class="inner-room-image">
+                        <img src="./images/rooms-3.png" class="img-fluid">
+                    </div>
+                    <div class="single-room-text text-white d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="mb-2">From $250/night</span>
+                            <h3>Signature   Room</h3>
+                        </div>
+                        <a href="#">Book Now</a>
+                    </div>
+                </div>
+                <div class="single-room">
+                    <div class="inner-room-image">
+                        <img src="./images/rooms-4.png" class="img-fluid">
+                    </div>
+                    <div class="single-room-text text-white d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="mb-2">From $250/night</span>
+                            <h3>Couple Room</h3>
+                        </div>
+                        <a href="#">Book Now</a>
+                    </div>
+                </div>
+              </div>
+          </section>
+          <section id="phone-nubmer-section">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-10 offset-md-1">
+                        <div class="phone d-flex flex-column flex-md-row justify-content-between align-items-center">
+                            <h2 class="text-center text-md-left mb-3 mb-md-0" id="h">For Reservation 0r Query?</h2>
+                            <a href="#" class="phne-number">+10 576 377 4789</a>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </section>
+          <!--Hover Images section-->
+          <section id="hover-images">
+              <div class="images">
+                  <div class="single-image">
+                      <img src="./images/hover-1.png" alt="" class="img-fluid">
+                      <div class="overlay">
+                            <a href="#">Explore Us <i class="fa fa-instagram"></i></a>
+                      </div>
+                  </div>
+                  <div class="single-image">
+                      <img src="./images/hover-2.png" alt="" class="img-fluid">
+                      <div class="overlay">
+                            <a href="#">Explore Us <i class="fa fa-instagram"></i></a>
+                      </div>
+                  </div>
+                  <div class="single-image">
+                      <img src="./images/hover-3.png" alt="" class="img-fluid">
+                      <div class="overlay">
+                            <a href="#">Explore Us <i class="fa fa-instagram"></i></a>
+                      </div>
+                  </div>
+                  <div class="single-image">
+                      <img src="./images/hover-4.png" alt="" class="img-fluid">
+                      <div class="overlay">
+                            <a href="#">Explore Us <i class="fa fa-instagram"></i></a>
+                      </div>
+                  </div>
+                  <div class="single-image">
+                      <img src="./images/hover-5.png" alt="" class="img-fluid">
+                      <div class="overlay">
+                            <a href="#">Explore Us <i class="fa fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!--Footer section-->
+          <section id="footer-section">
+              <div class="footer-area">
+                  <div class="container">
+                      <div class="row">
+                      <div class="col-12 col-md-3 my-4 my-md-0">
+                          <div class="address">
+                              <h3>Address</h3>
+                              <p class="">
+                                200, Green road, Mongla,
+                                New York City USA
+                              </p>
+                              <a href="#">Get Direction</a>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-3  my-4 my-md-0">
+                          <div class="reservation">
+                              <h3>Reservation</h3>
+                              <p class="">+10 367 267 2678
+                                <br> reservation@montana.com</p>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-2  my-4 my-md-0">
+                          <div class="navigation">
+                              <h3>Navigation</h3>
+                              <ul>
+                                  <li><a href="#">Home</a></li>
+                                  <li><a href="#">Rooms</a></li>
+                                  <li><a href="#">About</a></li>
+                                  <li><a href="#">News</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-4  my-4 my-md-0">
+                          <div class="newsletter">
+                            <h3>Newsletter</h3>
+                            <form action="#" method="#">
+                                <input type="text" placeholder="Enter your e-mail"><input type="submit" value="Sign Up">
+                            </form>
+                            <p>Subscrib to newsletter to get updates</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="straight-line"></div>
+                  <div class="credits d-flex justify-content-between align-items-center">
+                      <div class="name">
+                          Coded By <a href="#">Belal Wesam</a>
+                      </div>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+    <!--Bootstrap CDN-->
+    <div class="book-now">
+       <div class="container">
+           <div class="row">
+               <div class="col-12 col-md-8 offset-md-2">
+                <form action="#" method="post">
+                    <h1 class="mb-3 text-center">Check Availibilty</h1>
+                    <span id="close-book">X</span>
+                    <div class="reservation-creds">
+                        <div class="dates">
+                            <input type="text" id="datepicker" placeholder="Enter arrival date" class="form-control"> 
+                            <input type="text" id="datepicker-2" placeholder="Enter leave date" class="form-control">
+                        </div>
+                        <div class="personals">
+                          <select name="" id="adults" class="custom-select">
+                              <option value="">Adults</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                          </select>
+                          <select name="" id="kids" class="custom-select">
+                              <option value="">Kids</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-lg btn-primary btn-block">Check</button>
+                    </div>
+                </form>
+               </div>
+           </div>
+       </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( "#datepicker" ).datepicker();
+      $( "#datepicker-2" ).datepicker();
+    </script>
+  </body>
+</html>
